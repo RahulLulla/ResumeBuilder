@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Raleway-Black;
+  src: url(./fonts/raleway/Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(./fonts/raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(./fonts/raleway/Raleway-SemiBold.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  width: 100%;
+  /* height: 100%; */
+  /* overflow: auto; */
+  padding-bottom: 100px;
+  background-image: url("images/bg-01.jpg");
+  /* background-color: lightgray; */
+  /* border: 5px dashed purple; */
+  /* block-size: fit-content; */
+  /* display: flex; */
+  /* overflow: auto; */
+  /* position: relative; */
+  /* flex-flow: column; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (min-width: 1800px) {
+  body {
+    height: 93%;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    /* border: 5px dashed pink; */
+  }
+}
