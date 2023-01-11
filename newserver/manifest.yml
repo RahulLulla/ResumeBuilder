@@ -1,0 +1,5 @@
+applications:
+  - name: resume-builder-ad5
+# memory: 512M
+path: .
+# command: node server/index

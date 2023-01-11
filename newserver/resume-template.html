@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./resume-template.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="header item">
+      <h2 class="resume-name" id="profile-fullName">{profile-fullName}</h2>
+      <!-- Vertical Line -->
+      <div class="vl-1"></div>
+      <div class="resume-contact">
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <div class="resume-summary-icons">
+              <i class="fa fa-phone fa-fw"> </i>
+            </div>
+            <span id="profile-phoneNumber" class="list-items">{profile-phoneNumber}
+            </span>
+          </li>
+          <li class="mb-2">
+            <div class="resume-summary-icons">
+              <i class="fa fa-envelope fa-fw"> </i>
+            </div>
+            <span id="profile-website" class="list-items">{profile-website}
+            </span>
+          </li>
+          <li class="mb-2">
+            <div class="resume-summary-icons">
+              <i class="fa fa-link fa-fw"> </i>
+            </div>
+            <span id="profile-email" class="list-items">
+              {profile-email}
+            </span>
+          </li>
+          <li class="mb-2">
+            <div class="resume-summary-icons">
+              <i class="fa fa-location-arrow fa-fw"> </i>
+            </div>
+            <span id="profile-address" class="list-items">
+              {profile-address}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="resume-content ">
+      <aside class="resume-left-side">
+        <section class="work-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-briefcase fa-stack-2x profile-icons" style="font-size: 1rem; color:white; padding-top:5px">
+            </i>
+          </div>
+
+          <h2 class="resume-content-heading">Work Experience</h2>
+          <p></p>
+          <h3 id="profile-company1Pos" class="resume-content-text text-inline">
+            {profile-company1Pos}
+          </h3>
+          <span id="profile-company1Exp" class="resume-content-text">{profile-company1Exp}</span>
+          <h4 id="profile-company1Duration" class="duration">{profile-company1Duration}</h4>
+          <p id="profile-company1Desc" class="resume-desc">{profile-company1Desc}</p>
+
+          <h3 id="profile-company2Pos" class="resume-content-text text-inline">
+            {profile-company2Pos}
+          </h3>
+          <span id="profile-company2Exp" class="resume-content-text">{profile-company2Exp}</span>
+          <h4 id="profile-company2Duration" class="duration">{profile-company2Duration}</h4>
+          <p id="profile-company2Desc" class="resume-desc">{profile-company2Desc}</p>
+        </section>
+        <section class="project-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-file-text fa-stack-2x profile-icons" style="font-size: 1rem; color:white; padding-top:4px">
+            </i>
+          </div>
+          <h2 class="resume-content-heading">Projects</h2>
+          <h3 id="profile-projectTitle1" class="resume-content-text">{profile-projectTitle1}</h3>
+          <h4 id="profile-projectLink1" class="project-link text-muted">{profile-projectLink1}</h4>
+          <p id="profile-projectDesc1" class="resume-desc">
+            {profile-projectDesc1}
+          </p>
+          <h3 id="profile-projectTitle2" class="resume-content-text">{profile-projectTitle2}</h3>
+          <h4 id="profile-projectLink2" class="project-link text-muted">{profile-projectLink2}</h4>
+          <p id="profile-projectDesc2" class="resume-desc">{profile-projectDesc2}</p>
+        </section>
+      </aside>
+      <div class="vl-2"></div>
+
+      <aside class="resume-right-side">
+        <section class="skills-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-bars fa-stack-2x profile-icons" style="font-size: 1rem; color:white; padding-top: 5px;">
+            </i>
+          </div>
+          <h2 class="resume-content-heading">Skills</h2>
+          <ul id="skills-list" class="list-unstyled resume-desc list-spacing">
+            <li id="profile-skill1">{profile-skill1}</li>
+            <li id="profile-skill2">{profile-skill2}</li>
+            <li id="profile-skill3">{profile-skill3}</li>
+            <li id="profile-skill4">{profile-skill4}</li>
+            <li id="profile-skill5">{profile-skill5}</li>
+            <li id="profile-skill6">{profile-skill6}</li>
+          </ul>
+        </section>
+        <section class="education-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-graduation-cap fa-stack-2x profile-icons"
+              style="font-size: 1rem; color:white; padding-top: 5px;"> </i>
+          </div>
+          <h2 class="resume-content-heading">Education</h2>
+          <h3 id="profile-collegeQual" class="resume-content-text">{profile-collegeQual}</h3>
+          <h4 id="profile-college" class="resume-degree-college">{profile-college}</h4>
+          <h4 id="profile-collegeYears" class="resume-degree-time text-muted">{profile-collegeYears}</h4>
+          <p id="profile-collegeDesc" class="resume-desc college-desc">{profile-collegeDesc}</p>
+
+
+          <h3 id="profile-schoolQual" class="resume-content-text">{profile-schoolQual}</h3>
+          <h4 id="profile-school" class="resume-degree-college">{profile-school}</h4>
+          <h4 id="profile-schoolYears" class="resume-degree-time text-muted">{profile-schoolYears}</h4>
+          <p id="profile-schoolDesc" class="resume-desc college-desc">{profile-schoolDesc}</p>
+        </section>
+        <section class="interest-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-navicon fa-stack-2x profile-icons" style="font-size: 1rem; color:white; padding-top: 5px;">
+            </i>
+          </div>
+          <h2 class="resume-content-heading">Interest</h2>
+          <ul id="interest-list" class="list-unstyled resume-desc list-spacing">
+            <li id="profile-interest1">{profile-interest1}</li>
+            <li id="profile-interest2">{profile-interest2}</li>
+            <li id="profile-interest3">{profile-interest3}</li>
+            <li id="profile-interest4">{profile-interest4}</li>
+            <li id="profile-interest5">{profile-interest5}</li>
+            <li id="profile-interest6">{profile-interest6}</li>
+          </ul>
+        </section>
+        <section class="profile-content">
+          <div class="resume-summary-icons fa-stack">
+            <i class="fa fa-square fa-stack-2x overlap-icons" style="font-size: 1.5rem;"></i>
+            <i class="fa fa-user fa-stack-2x profile-icons" style="font-size: 1rem; color:white; padding-top: 5px;">
+            </i>
+          </div>
+          <h2 class="resume-content-heading">Links</h2>
+          <ul id="profile-list" class="list-unstyled resume-desc list-spacing">
+            <li id="profile-linkedIn">{profile-linkedIn}</li>
+            <li id="profile-github">{profile-github}</li>
+            <li id="profile-twitter"></li>{profile-twitter}</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <!-- <button onclick="window.print()">Print this page</button> -->
+</body>
+
+</html>

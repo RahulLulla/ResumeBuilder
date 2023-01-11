@@ -1,0 +1,218 @@
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@media print {
+  vl-1 {
+    margin-left: 28% !important;
+  }
+}
+html,
+body {
+  margin: 0 auto;
+  width: 21cm;
+  height: 29.7cm;
+  -webkit-print-color-adjust: exact;
+}
+div.chapter,
+div.appendix {
+  page-break-after: always;
+}
+@media (min-width: 1800px) {
+  html,
+  body {
+    margin: 0 auto;
+    width: 21cm;
+    height: 29.7cm;
+  }
+  .vl-1 {
+    margin-left: 28% !important;
+    margin-top: 3rem !important;
+  }
+}
+div {
+  display: block;
+}
+body {
+  margin: 0 auto;
+  font-family: "Roboto";
+  line-height: 1.5;
+  color: #2a2929;
+  text-align: left;
+  background-color: #fff;
+}
+hr {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  margin-right: 0%;
+  letter-spacing: -0.5px;
+}
+.vl-1 {
+  border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 110px;
+  /* height: 13.5%; */
+  /* margin-left: 35%; */
+  margin-left: 505px;
+  margin-top: 0rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: inline;
+  z-index: 1;
+  position: absolute;
+}
+.resume-contact {
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 43%;
+  height: 100%;
+}
+.list-unstyled {
+  padding-left: 0;
+  padding-top: 0;
+  list-style: none;
+}
+.list-spacing {
+  line-height: 2;
+}
+.resume-summary-icons {
+  color: #5695cd;
+  display: inline;
+
+  margin-left: -5px;
+}
+.list-items {
+  padding-left: 5px;
+}
+.resume-content {
+  padding-top: 30px;
+  overflow: auto;
+}
+.work-content,
+.skills-content {
+  padding-top: 5px;
+}
+.project-content,
+.interest-content,
+.education-content,
+.profile-content {
+  padding-top: 20px;
+}
+.resume-content-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0;
+  display: inline;
+  padding-left: 5px;
+  color: #54b689;
+  color: #5695cd;
+}
+.resume-content-text {
+  font-size: 1.14rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0;
+  display: table;
+}
+span.resume-content-text {
+  font-weight: 400;
+  display: inline;
+}
+.text-inline {
+  display: inline;
+}
+.text-block {
+  display: block;
+}
+.duration,
+.project-link {
+  font-size: 0.85em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  color: #54b689;
+  color: #767676;
+}
+.text-muted {
+  color: #767676 !important;
+}
+.resume-degree-college {
+  font-size: 0.85rem;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+.resume-degree-time {
+  font-size: 0.75rem;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+.resume-left-side {
+  padding-left: 20px;
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+.resume-right-side {
+  padding-right: 3px;
+  width: 30%;
+  height: 100%;
+  float: right;
+  word-wrap: break-word;
+  display: inline;
+}
+.resume-desc {
+  font-size: 0.875rem;
+}
+.vl-2 {
+  height: 900px;
+  margin-left: 30px;
+  display: inline;
+  width: 0.1%;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.overlap-icons {
+  font-size: 0.5rem;
+}
+.profile-icons {
+  color: white;
+}
+.college-desc {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
