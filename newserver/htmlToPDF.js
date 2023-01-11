@@ -9,7 +9,7 @@ const readFile = utils.promisify(fs.readFile);
 
 async function getHtmlFile(file) {
   try {
-    const filePath = path.resolve("./index.html");
+    const filePath = path.resolve(file);
     return await readFile(filePath, "utf8");
   } catch (err) {
     return Promise.reject("Could not load html file");
@@ -25,8 +25,8 @@ const htmlToPDF = (resumeData) => {
     const template = fs.readFileSync("./resume-template.html", "utf-8");
     // const content = ejs.render(template, { title: "Resume" });
     const newContent = parseHTML(template, resumeData.resume);
-    fs.writeFileSync(path.resolve(__dirname, "./index.html"), newContent);
-    getHtmlFile("./index.html")
+    fs.writeFileSync(path.resolve(__dirname, "./resume.html"), newContent);
+    getHtmlFile("./resume.html")
       .then(async (res) => {
         const html = res;
         const browser = await puppeteer.launch({
@@ -85,6 +85,18 @@ const htmlToPDF = (resumeData) => {
         });
         await browser.close();
         console.log("Server PDF created at:", new Date().toJSON("hh:mm:ss.ms"));
+        fs.unlink("./resume.html", function (err) {
+          if (err)
+            console.log(
+              "/get-pdf: Error in resume.html file deletion operation.",
+              err
+            );
+          else
+            console.log(
+              "resume.html file Deleted at Server",
+              new Date().toJSON("hh:mm:ss.ms")
+            );
+        });
         resolve("Success");
       })
       .catch((err) => {
