@@ -1,5 +1,0 @@
-applications:
-  - name: resume-builder-9f1
-# memory: 512M
-path: .
-# command: node server/index

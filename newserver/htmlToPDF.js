@@ -30,6 +30,7 @@ const htmlToPDF = (resumeData) => {
       .then(async (res) => {
         const html = res;
         const browser = await puppeteer.launch({
+          args: ["--no-sandbox"],
           headless: true,
         });
         const page = await browser.newPage();
