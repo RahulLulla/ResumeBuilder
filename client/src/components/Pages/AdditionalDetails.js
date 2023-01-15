@@ -4,9 +4,11 @@ import displayGridItemsUsingState from "../methods/displayGridItems";
 import { School, Interests, Download } from "@mui/icons-material/";
 import createAndGetPDF from "../fetch/createAndGetPDF";
 import { listOfButtons } from "../methods/listOfButtons";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const AdditionalDetails = ({ goNext, goBack, handleChange, resumeData }) => {
   const { register } = useForm();
+  const screen = useMediaQuery("(max-width:480px)");
 
   const textFieldItemsRow1 = [
     { label: "Skill 1", id: "skill1", icon: <School /> },
@@ -25,22 +27,6 @@ const AdditionalDetails = ({ goNext, goBack, handleChange, resumeData }) => {
     { label: "Interest 5", id: "interest5", icon: <Interests /> },
     { label: "Interest 6", id: "interest6", icon: <Interests /> },
   ];
-
-  const style = {
-    backgroundColor: "#2f91ff",
-    position: "relative",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "0 5px",
-    minWidth: "120px",
-    height: "45px",
-    fontFamily: "Raleway-Bold",
-    fontSize: "16px",
-    color: "#fff",
-    lineHeight: 1.2,
-    textTransform: "uppercase",
-    border: "none",
-  };
 
   const submitFormHandler = async (e) => {
     e.preventDefault();
@@ -70,11 +56,10 @@ const AdditionalDetails = ({ goNext, goBack, handleChange, resumeData }) => {
       true,
       <Button
         variant="contained"
-        style={style}
         onClick={submitFormHandler}
         endIcon={<Download />}
       >
-        Download Resume
+        {screen ? "" : "Download Resume"}
       </Button>
     );
   };
@@ -86,7 +71,7 @@ const AdditionalDetails = ({ goNext, goBack, handleChange, resumeData }) => {
         <Grid container spacing={1.5}>
           <span className="resumeContainer-headline2">Skills/Languages</span>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow1,
             resumeData,
             register,
@@ -101,7 +86,7 @@ const AdditionalDetails = ({ goNext, goBack, handleChange, resumeData }) => {
             Interests
           </span>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow2,
             resumeData,
             register,

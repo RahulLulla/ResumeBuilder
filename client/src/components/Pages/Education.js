@@ -5,6 +5,7 @@ import { School, Description } from "@mui/icons-material/";
 import { useForm } from "react-hook-form";
 import displayGridItemsUsingState from "../methods/displayGridItems";
 import displayDateItemsUsingState from "../methods/displayDateItems";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Education = ({
   goBack,
@@ -14,6 +15,7 @@ const Education = ({
   handleDateChange,
 }) => {
   const { register } = useForm();
+  const screen = useMediaQuery("(max-width:480px)");
 
   const textFieldItemsRow1 = [
     { label: "College/University", id: "college", icon: <School /> },
@@ -55,28 +57,28 @@ const Education = ({
       <div className="resumeContainer-form1">
         <Grid container spacing={1.5}>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow1,
             resumeData,
             register,
             handleChange
           )}
           {displayDateItemsUsingState(
-            4,
+            screen ? 12 : 4,
             selectionFieldItems1,
             resumeData,
             register,
             handleDateChange
           )}
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow2,
             resumeData,
             register,
             handleChange
           )}
           {displayGridItemsUsingState(
-            8,
+            screen ? 12 : 8,
             textFieldItemsRow3,
             resumeData,
             register,
@@ -91,28 +93,28 @@ const Education = ({
 
         <Grid container spacing={1.5}>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow4,
             resumeData,
             register,
             handleChange
           )}
           {displayDateItemsUsingState(
-            4,
+            screen ? 12 : 4,
             selectionFieldItems2,
             resumeData,
             register,
             handleDateChange
           )}
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow5,
             resumeData,
             register,
             handleChange
           )}
           {displayGridItemsUsingState(
-            8,
+            screen ? 12 : 8,
             textFieldItemsRow6,
             resumeData,
             register,

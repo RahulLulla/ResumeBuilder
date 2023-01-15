@@ -10,11 +10,12 @@ import {
   LocationCity as City,
 } from "@mui/icons-material/";
 import displayGridItemsUsingState from "../methods/displayGridItems";
-import "./PersonalDetails.css";
 import { listOfButtons } from "../methods/listOfButtons";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const PersonalDetails = ({ goNext, handleChange, resumeData }) => {
   const { register } = useForm();
+  const screen = useMediaQuery("(max-width:480px)");
 
   const textFieldItems = [
     { label: "First Name", id: "firstName" },
@@ -36,7 +37,7 @@ const PersonalDetails = ({ goNext, handleChange, resumeData }) => {
       <div className="resumeContainer-form1">
         <Grid container spacing={1.5}>
           {displayGridItemsUsingState(
-            6,
+            screen ? 12 : 6,
             textFieldItems,
             resumeData,
             register,

@@ -10,6 +10,7 @@
   /* border: 1px dashed red; */
   background-color: white;
   /* border-radius: 2px; */
+  /* display: ; */
 }
 
 .resumeContainer.personalDetailsForm {
@@ -37,39 +38,6 @@
 .resumeContainer.additionalDetailsForm {
   width: 60%;
   height: 84vh;
-}
-
-@media (min-width: 1800px) {
-  .resumeContainer {
-    margin-top: 5%;
-    width: 40%;
-    height: 55vh;
-    /* border: 1px solid blueviolet; */
-  }
-  .resumeContainer.personalDetailsForm {
-    width: 55%;
-    height: 65vh;
-  }
-
-  .resumeContainer.eduForm {
-    width: 60%;
-    height: 58vh;
-  }
-
-  .resumeContainer.projectForm {
-    width: 50%;
-    height: 85.5vh;
-  }
-
-  .resumeContainer.experienceForm {
-    width: 60%;
-    height: 70vh;
-  }
-
-  .resumeContainer.additionalDetailsForm {
-    width: 60%;
-    height: 67vh;
-  }
 }
 
 .resumeContainer-headline {
@@ -156,6 +124,20 @@ button:disabled:hover {
   background-color: #2f91ff;
 }
 
+.download-btn button {
+  height: 100%;
+  background-color: #2f91ff;
+  position: relative;
+  padding: "0 5px";
+  font-family: Raleway-Bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: none;
+  overflow: auto;
+}
+
 button:hover {
   border: 1px solid #0099cc;
   background-color: #00aacc;
@@ -169,7 +151,116 @@ button:hover {
   border-radius: "2px";
   font-family: "Raleway-SemiBold";
   margin-top: "5px";
-  /* input: {
-    fontFamily: "Raleway-SemiBold",
-  }, */
+}
+
+.resumeFooter {
+  bottom: 0;
+  position: relative;
+  left: 0;
+}
+
+.resumeFooter-copyright {
+  /* height: 2em; */
+  padding-bottom: 100px;
+  font-size: small;
+  font-family: Raleway-Black;
+  line-height: 1.2;
+  color: rgba(51, 51, 51, 0.624);
+  text-align: center;
+}
+
+@media (min-width: 1800px) {
+  .resumeContainer {
+    margin-top: 5%;
+    width: 40%;
+    height: 55vh;
+    /* border: 1px solid blueviolet; */
+  }
+  .resumeContainer.personalDetailsForm {
+    width: 55%;
+    height: 65vh;
+  }
+
+  .resumeContainer.eduForm {
+    width: 60%;
+    height: 58vh;
+  }
+
+  .resumeContainer.projectForm {
+    width: 50%;
+    height: 85.5vh;
+  }
+
+  .resumeContainer.experienceForm {
+    width: 60%;
+    height: 70vh;
+  }
+
+  .resumeContainer.additionalDetailsForm {
+    width: 60%;
+    height: 67vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .resumeContainer {
+    margin-top: 5%;
+    padding: 20px 100px 0px;
+  }
+  .resumeContainer.personalDetailsForm,
+  .resumeContainer.eduForm,
+  .resumeContainer.projectForm,
+  .resumeContainer.experienceForm,
+  .resumeContainer.additionalDetailsForm {
+    width: 40%;
+    height: 100%;
+    padding-bottom: 10%;
+  }
+  /*  .resumeContainer.personalDetailsForm {
+    width: 40%;
+    height: 115vh;
+  }
+  .resumeContainer.eduForm {
+    width: 40%;
+    height: 115vh;
+  }
+
+  .resumeContainer.projectForm {
+    width: 40%;
+    height: 92vh;
+  }
+
+  .resumeContainer.experienceForm {
+    width: 40%;
+    height: 111vh;
+  }
+  .resumeContainer.additionalDetailsForm {
+    width: 40%;
+    height: 140vh;
+  }*/
+  .resumeContainer-headline {
+    font-size: 30px !important;
+    /* border: 1px solid blueviolet; */
+    margin-left: -50% !important;
+    width: 200% !important;
+    padding-bottom: 20px !important;
+  }
+  .resumeContainer-headline2 {
+    font-size: 15px !important;
+    margin-left: 15px;
+  }
+
+  .resumeContainer-form1 {
+    width: 201% !important;
+    height: 60%;
+    margin-left: -50%;
+  }
+
+  .download-btn button {
+    /* display: inline-flex; */
+    width: 0px !important;
+  }
+  .download-btn button span {
+    margin-right: 8px;
+  }
 }

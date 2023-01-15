@@ -10,6 +10,7 @@ import {
   Business,
   EventSeat,
 } from "@mui/icons-material/";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Experience = ({
   goBack,
@@ -19,6 +20,7 @@ const Experience = ({
   handleDurationChange,
 }) => {
   const { register } = useForm();
+  const screen = useMediaQuery("(max-width:480px)");
 
   const textFieldItemsRol1 = [
     { label: "Institute/Organization", id: "company1Exp", icon: <Business /> },
@@ -52,14 +54,14 @@ const Experience = ({
         <Grid container spacing={1.5}>
           <span className="resumeContainer-headline2">Experience 1</span>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRol1,
             resumeData,
             register,
             handleChange
           )}
           {displaySelectionItems(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow_1,
             resumeData,
             register,
@@ -82,14 +84,14 @@ const Experience = ({
             Experience 2
           </span>
           {displayGridItemsUsingState(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow3,
             resumeData,
             register,
             handleChange
           )}
           {displaySelectionItems(
-            4,
+            screen ? 12 : 4,
             textFieldItemsRow_3,
             resumeData,
             register,

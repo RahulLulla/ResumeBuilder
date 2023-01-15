@@ -15,7 +15,7 @@ export const listOfButtons = (
         &lt; Previous
       </button>
 
-      {downloadButton}
+      <div className="download-btn">{downloadButton}</div>
 
       <button
         disabled={nextDisabled}

@@ -27,17 +27,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
   width: 100%;
-  /* height: 100%; */
-  /* overflow: auto; */
   padding-bottom: 100px;
-  background-image: url("images/bg-01.jpg");
-  /* background-color: lightgray; */
-  /* border: 5px dashed purple; */
-  /* block-size: fit-content; */
-  /* display: flex; */
-  /* overflow: auto; */
-  /* position: relative; */
-  /* flex-flow: column; */
+  background-image: url(images/bg-01.jpg);
+  background-size: 100% 180%;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 code {
@@ -51,6 +45,11 @@ code {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 0;
-    /* border: 5px dashed pink; */
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-size: 100% 200%;
+    padding-bottom: 5%;
   }
 }

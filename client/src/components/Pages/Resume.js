@@ -7,6 +7,8 @@ import {
   extraDetails,
 } from "../methods/stateNames";
 import { renderSwitch } from "../methods/renderSwitch";
+// import Footer from "../UI/Footer";
+import "./PersonalDetails.css";
 
 const Resume = () => {
   const [step, setStep] = useState(1);
@@ -77,6 +79,7 @@ const Resume = () => {
         goBack,
         resetForm
       )}
+      {/* <Footer /> */}
     </>
   );
 };
